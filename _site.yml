@@ -1,0 +1,35 @@
+name: "데이터 분석가를 위한 Digital Authoring"
+title: "샘플 웹사이트"
+description: |
+  My Website
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "Digital Authoring 소개"
+      href: intro_digital_authoring.html
+    - text: "텍스트 기반 이진분류 모형"
+      menu:
+        - text: "LASSO 모형기반 민원 예측"
+          href: classifier_lasso.html
+        - text: "---"       
+        - text: "CBERT 기반 민원 예측"
+          href: classifier_bert.html
+output:
+.distill-site-header {
+  --title-size:       18px;
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       var(--custom-blue);
+}
+.distill-site-footer {
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       var(--custom-blue);
+}
+    theme: theme.css
+    includes:
+      after_body: footer.html
